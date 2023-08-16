@@ -209,7 +209,15 @@ ul {
   min-width: 264px;
 }
 .hero {
-  background-color: var(--navyblue);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/studio/herobackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 1440px;
+  background-position: center;
   padding: 188px 0;
   text-align: center;
 }
@@ -329,6 +337,11 @@ ul {
   font-family: inherit;
   margin-top: 8px;
 }
+.customers-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 24px;
+}
 
 /*portfolio styles*/
 .filter-button-align {
@@ -360,10 +373,16 @@ ul {
 .filter-button:hover {
   background: var(--ocean);
   color: var(--white);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 .filter-button:focus {
   background: var(--ocean);
   color: var(--white);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 .portfolio-list {
   display: flex;
@@ -376,6 +395,11 @@ ul {
 .project-card {
   background: var(--white, #fff);
   margin-bottom: 48px;
+}
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .card-content {
   padding: 32px 16px;
