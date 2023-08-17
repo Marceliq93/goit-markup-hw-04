@@ -150,7 +150,10 @@ footer {
   background: var(--navyblue);
   padding: 100px 0;
 }
-
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 .footer-info {
   color: var(--cloud, #f4f4fd);
   font-size: 16px;
@@ -159,7 +162,16 @@ footer {
   font-family: inherit;
   width: 264px;
 }
+.footer-info-container {
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
 
+.footer-social-container {
+  margin-left: 120px;
+  padding: 0;
+}
 .footer-social-text {
   color: var(--white);
   font-family: inherit;
@@ -167,6 +179,8 @@ footer {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 .footer-socials {
   display: inline-flex;
