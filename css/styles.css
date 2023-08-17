@@ -160,9 +160,26 @@ footer {
   width: 264px;
 }
 
+.footer-social-text {
+  color: var(--white);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+}
+.footer-socials {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer-social-icon:hover {
+  fill: #31d0aa;
+}
 ul {
   list-style: none;
 }
+
 /*logo styles   */
 
 .logo {
@@ -194,7 +211,9 @@ ul {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-
+svg {
+  fill: #404bbf;
+}
 .logo {
   text-decoration: none;
 }
@@ -267,6 +286,13 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.4px;
   font-family: inherit;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.trait-icon {
+  background-color: var(--cloud);
+  border-radius: 4px;
 }
 .studio-section-header {
   color: var(--navyblue);
@@ -336,11 +362,26 @@ ul {
   letter-spacing: 0.32px;
   font-family: inherit;
   margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.team-member-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.team-social-icon:hover {
+  fill: var(--ocean);
 }
 .customers-list {
   display: inline-flex;
   align-items: flex-start;
   gap: 24px;
+}
+
+.customer-rectangle {
+  border-radius: 4px;
 }
 
 /*portfolio styles*/
