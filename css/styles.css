@@ -12,6 +12,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+svg {
+  cursor: pointer;
+}
 h1 {
   margin: 0;
 }
@@ -181,6 +184,10 @@ footer {
   letter-spacing: 0.32px;
   margin-top: 0px;
   margin-bottom: 16px;
+}
+.footer-social-list {
+  display: inline-flex;
+  gap: 16px;
 }
 .footer-socials {
   display: inline-flex;
@@ -382,7 +389,12 @@ svg {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
+.member-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
 .team-member-socials {
   display: flex;
   justify-content: center;
@@ -397,18 +409,25 @@ svg {
   align-items: flex-start;
   gap: 24px;
 }
-
 .customer-rectangle {
   fill: #8e8f99;
-  border: #8e8f99 1px;
-  border-style: solid;
+  width: 168px;
+  height: 88px;
+  border: 1px var(--slate) solid;
   border-radius: 4px;
+  padding: 9px 9px 6px 11px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
 }
 .customer-rectangle:hover {
   fill: var(--ocean);
   border-color: var(--ocean);
 }
 /*portfolio styles*/
+.portfolio-section {
+  padding-top: 96px;
+}
 .filter-button-align {
   text-align: center;
 }
@@ -417,6 +436,7 @@ svg {
   align-items: flex-start;
   gap: 24px;
   margin-bottom: 72px;
+  padding-top: 0px;
 }
 
 .filter-button {
@@ -440,7 +460,8 @@ svg {
   color: var(--white);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  border: none;
+  border-color: var(--ocean);
+  cursor: pointer;
 }
 .filter-button:focus {
   background: var(--ocean);
@@ -465,6 +486,7 @@ svg {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 .card-content {
   padding: 32px 16px;
