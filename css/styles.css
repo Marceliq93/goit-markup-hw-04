@@ -176,6 +176,10 @@ footer {
 .footer-social-icon:hover {
   fill: #31d0aa;
 }
+
+.social-all {
+  fill: var(--iris);
+}
 ul {
   list-style: none;
 }
@@ -381,9 +385,15 @@ svg {
 }
 
 .customer-rectangle {
+  fill: #8e8f99;
+  border: #8e8f99 1px;
+  border-style: solid;
   border-radius: 4px;
 }
-
+.customer-rectangle:hover {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+}
 /*portfolio styles*/
 .filter-button-align {
   text-align: center;
